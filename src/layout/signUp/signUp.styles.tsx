@@ -15,7 +15,7 @@ export const Container = styled.div`
   .sign-up{
     background-color: #FEFEFE;
     border-radius: 12px;
-    width: 374px;
+    width: 430px;
     padding: 48px 28px;
     box-shadow: 0px 4px 32px 0px rgba(51, 51, 51, 0.04);
 

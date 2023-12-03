@@ -1,7 +1,6 @@
 import { InputProps } from "./input.props";
 import { ForwardedRef, forwardRef } from "react";
 import { InputContainer } from "./input.styles";
-import errorSVG from "./error.svg"
 
 const Input = forwardRef(
   (
@@ -13,7 +12,7 @@ const Input = forwardRef(
         <label className={error ? "error" : ""}>
           <span>{labelText}</span>
           <input ref={ref} {...props} />
-          <img src={errorSVG}/>
+          <img src="error.svg"/>
         </label>
       </InputContainer>
     );

@@ -52,6 +52,9 @@ export const usePost = (url: string, data: object | undefined) => {
 export const usePatch = (url: string, data: object | undefined) => {
   return instance(url, data).patch(url, data);
 };
+export const usePut = (url: string, data: object | undefined) => {
+  return instance(url, data).put(url, data);
+};
 
 export const useDelete = (url: string, data: object | undefined) => {
   return instance(url, data).delete(url, data);
