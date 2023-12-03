@@ -7,7 +7,7 @@ import {useDebounce} from "../../helper/debounce"
 import { useNavigate } from "react-router-dom";
 
 export default function Header({setSearchData}: HeaderProps) {
-  const [searchText, setSearchText] = useState<string>();
+  const [searchText, setSearchText] = useState<string>("");
   const debounce = useDebounce(getBooks, 1000)
   const navigate = useNavigate()
 
