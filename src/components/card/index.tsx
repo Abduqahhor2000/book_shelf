@@ -25,7 +25,7 @@ export default function Card({ book }: { book: Ibook }) {
         if (axios.isAxiosError(error)) {
           const axiosError = error as AxiosError;
           if (axiosError.response) {
-            if(!axiosError.response.data.isOk){
+            if(!axiosError.response.data){
                setSelected(true)
             }
           } else {

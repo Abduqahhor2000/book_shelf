@@ -13,7 +13,7 @@ export default function SearchPanel({searchData, setSearchData}: SearchPanelProp
         </div>
         <div className="books">
             {
-              searchData === "loading" ? <span className="loading">Loading...</span> :  searchData?.map((book: Ibook) => <Card key={book.isbn} book={book}/>)
+              typeof searchData ===  "string" ? <span className="loading">Loading...</span> :  searchData?.map((book: Ibook) => <Card key={book.isbn} book={book}/>)
             }
         </div>
     </Panel>

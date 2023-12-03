@@ -1,6 +1,7 @@
+import { SearchProps } from "./search.props";
 import { InputDiv } from "./search.styles";
 
-const Search = ({ value, setValue, ...props }): JSX.Element => {
+const Search = ({ value, setValue, ...props }: SearchProps): JSX.Element => {
   const clearField = () => {
     setValue("");
   };
